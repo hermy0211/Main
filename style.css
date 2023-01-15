@@ -50,9 +50,18 @@ div.grey {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100vw-120px);
+    width: 100vw;
     height: 100vh;
     background-color: #E2DED9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+div.intro-grey {
+    width: calc(100%-120px);
+    margin: 0;
     padding: 40px 60px 40px 60px;
 }
 
@@ -64,22 +73,22 @@ div.green {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100vw-90px);
+    width: 100vw;
     height: 100vh;;
     background-color: #AAFF00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.intro-green {
+    width: calc(100%-90px);
+    margin: 0;
     padding: 25px 45px 25px 45px;
 }
 
 .socials {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-left: 60px;
-    margin-bottom: 120px;
-}
-
-.text {
-    padding-bottom: 25px;
+    padding: 40px 60px 40px 60px;
 }
 
 .accounts {
@@ -125,22 +134,20 @@ div.green {
 
     .socials {
         bottom: 20px;
-        padding-left: 30px;
-    }
-
-    .text {
-        padding-bottom: 5px;
+        padding: 20px 30px 20px 30px;
     }
 
     .accounts {
         font-size: 12pt;
     }
 
-    div.grey {
+    div.intro-grey {
+        width: calc(100%-60px);
         padding: 20px 30px 20px 30px;
     }
 
-    div.green {
+    div.intro-green {
+        width: calc(100%-40px);
         padding: 10px 20px 10px 20px;
     }
 }
