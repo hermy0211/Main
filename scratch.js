@@ -99,10 +99,20 @@ document.addEventListener("mousemove", function(e) {
 setupCanvas(canvasIn)
 setupCanvas(canvasOut)
 
+
+// Resize Support
+
+const appHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+}
+
 window.addEventListener("resize", function() {
   setupCanvas(canvasIn)
   setupCanvas(canvasOut)
+  appHeight()
 })
+
 
 // Mobile Support
 document.addEventListener("touchstart", function(e) {
