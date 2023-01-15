@@ -109,8 +109,17 @@ div.green {
         opacity: 0.1;
     }
 
+    .socials {
+        bottom: 20px;
+        padding-left: 30px;
+    }
+
+    .text {
+        padding-bottom: 5px;
+    }
+
     .accounts {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     div.grey {
