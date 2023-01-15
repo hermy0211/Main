@@ -99,8 +99,9 @@ div.green {
 
 @media screen and (max-width: 600px) {
     body {
-        font-size: 40pt;
+        font-size: 36pt;
         line-height: 1.2;
+        font-weight: 600;
     }
 
     .drawing {
