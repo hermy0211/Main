@@ -104,6 +104,11 @@ div.green {
         font-weight: 600;
     }
 
+    div.cursor.is-down {
+        width: 40px;
+        height: 40px;
+    }
+
     .drawing {
         width: 600px;
         opacity: 0.1;
@@ -127,6 +132,6 @@ div.green {
     }
 
     div.green {
-        padding: 15px 25px 15px 25px;
+        padding: 10px 20px 10px 20px;
     }
 }

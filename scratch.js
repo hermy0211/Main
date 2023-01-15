@@ -40,7 +40,12 @@ const setupCanvas = function(canvas) {
     context.fillStyle = "#FFFFFF"
   }
 
-  context.lineWidth = 80
+  if (w < 600) {
+    context.lineWidth = 40
+  } else {
+    context.lineWidth = 80
+  }
+
   context.lineCap = "round"
   context.lineJoin = "round"
 
