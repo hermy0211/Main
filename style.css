@@ -111,4 +111,12 @@ div.green {
     .accounts {
         font-size: 16pt;
     }
+
+    div.grey {
+        padding: 20px 30px 20px 30px;
+    }
+
+    div.green {
+        padding: 15px 25px 15px 25px;
+    }
 }
