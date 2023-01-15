@@ -105,15 +105,18 @@ document.addEventListener("touchstart", function(e) {
   startDraw(canvasIn, e.pageX, e.pageY)
   startDraw(canvasOut, e.pageX, e.pageY)
   isMouseDown = true
+  e.preventDefault()
 })
 
 document.addEventListener("touchend", function() {
   shrinkCursor()
   isMouseDown = false
+  e.preventDefault()
 })
 
 document.addEventListener("touchmove", function(e) {
   moveCursor(e.pageX, e.pageY)
   moveDraw(canvasIn, e.pageX, e.pageY)
   moveDraw(canvasOut, e.pageX, e.pageY)
+  e.preventDefault()
 })
