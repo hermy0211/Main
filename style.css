@@ -50,7 +50,7 @@ div.grey {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100vw-120px);
     height: 100vh;
     background-color: #E2DED9;
     padding: 40px 60px 40px 60px;
@@ -64,7 +64,7 @@ div.green {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: calc(100vw-90px);
     height: 100vh;;
     background-color: #AAFF00;
     padding: 25px 45px 25px 45px;
@@ -93,4 +93,22 @@ div.green {
     bottom: 0;
     right: 0;
     width: 760px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 40pt;
+        line-height: 1.2;
+    }
+
+    .drawing {
+        width: 600px;
+        opacity: 0.1;
+    }
+
+    .accounts {
+        font-size: 16pt;
+    }
 }

@@ -106,17 +106,17 @@ document.addEventListener("touchstart", function(e) {
   startDraw(canvasOut, e.pageX, e.pageY)
   isMouseDown = true
   e.preventDefault()
-})
+}, {passive: false})
 
-document.addEventListener("touchend", function() {
+document.addEventListener("touchend", function(e) {
   shrinkCursor()
   isMouseDown = false
   e.preventDefault()
-})
+}, {passive: false})
 
 document.addEventListener("touchmove", function(e) {
   moveCursor(e.pageX, e.pageY)
   moveDraw(canvasIn, e.pageX, e.pageY)
   moveDraw(canvasOut, e.pageX, e.pageY)
   e.preventDefault()
-})
+}, {passive: false})
